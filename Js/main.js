@@ -55,8 +55,6 @@ const sr = ScrollReveal({
 })
 
 /*SCROLL HOME*/
-sr.reveal('.nav__logo', {delay: 200})
-sr.reveal('.nav__link', {origin:'right', delay: 400})
 sr.reveal('.home__scroll', {delay: 200})
 sr.reveal('.home__title', {origin:'right', delay: 400})
 
