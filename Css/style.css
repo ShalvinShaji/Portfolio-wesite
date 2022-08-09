@@ -1,5 +1,7 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+
 
 /*===== VARIABLES CSS =====*/
 :root{
@@ -13,6 +15,8 @@
     --white-color: #FAFAFF;
     --dark-color: #1A1A1A;
     --text-color: #697477;
+    --theme-color:#9318ab98;
+    --footer-color:#1d0d2198;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -146,18 +150,26 @@ img{
 .nav__link{
     position: relative;
     color: var(--dark-color);
+    
 }
 .nav__link:hover{
-    color: var(--text-color);
+    color: var(--theme-color);
+    
 }
 .nav__logo{
     color: var(--text-color);
+    
+}
+.nav__logo:hover{
+    color: var(--theme-color);
+    transition-duration: .4s;
 }
 .nav__toggle{
     color: var(--text-color);
     font-size: 1.5rem;
     cursor: pointer;
 }
+
 
 /*=== Show menu ===*/
 .show{
@@ -169,11 +181,11 @@ img{
     position:absolute;
     content: "";
     width: 3rem;
-    height: .14rem;
+    height: .13rem;
     left: 0;
-    top: 2rem;
+    top: 1.6rem;
     border-radius: 100%;
-    background-color: var(--dark-color);
+    display: none;
 }
 
 /*===== HOME =====*/
@@ -195,7 +207,7 @@ img{
     line-height: 1;
 }
 .home__title__name{
-    color: #b300ff;
+    color: var(--theme-color);
 }
 
 
@@ -221,18 +233,16 @@ img{
     text-align: center;
 }
 .about__img{
-    display: flex;
     justify-content: center;
     padding-top: 1rem;
-    width: 120px;
-    height: 120px;
-    background-color: var(--first-color);
+    height: 200px;
+    width: 200px;
+    background-color: var(--dark-color);
+    border: 4px solid var(--theme-color);
     border-radius: 50%;
     overflow: hidden;
 }
-.about__img img{
-    width: 100px;
-}
+
 .about__subtitle{
     font-size: var(--h2-font-size);
     color: var(--first-color);
@@ -250,7 +260,8 @@ img{
     margin: 0 var(--mb-1);
 }
 .about__social-icon:hover{
-    color: var(--first-color);
+    color: var(--theme-color);
+    transition-duration: .4s;
 }
 
 /* ===== SKILLS =====*/
@@ -271,12 +282,11 @@ img{
     border-radius: .25rem;
 }
 .skills__name:hover{
-    background-color: var(--first-color);
+    background-color: var(--theme-color);
     color: var(--white-color);
+    transition-duration: .7s;
 }
-.skills__img img{
-    border-radius: .5rem;
-}
+
 
 /* ===== PORTFOLIO =====*/
 .portfolio{
@@ -342,7 +352,7 @@ img{
 }
 .contact__button{
     display: block;
-    background-color: var(--first-color);
+    background-color: var(--theme-color);
     color: var(--white-color);
     padding: .75rem 2.5rem;
     margin-left: auto;
@@ -355,28 +365,28 @@ img{
 
 /* ===== FOOTER=====*/
 .footer{
-    background-color: var(--dark-color);
+    background-color: var(--first-color);
 }
 .footer__container{
     row-gap: 2rem;
 }
 .footer__title{
     font-size: var(--normal-font-size);
-    color: var(--white-color);
+    color: var(--text-color);
     margin-bottom: var(--mb-2);
 }
 .footer__link{
     padding: .25rem 0;
 }
 .footer__link:hover{
-    color: var(--first-color);
+    color: var(--theme-color);
 }
 .footer__social{
     font-size: 1.4rem;
     margin-right: var(--mb-1);
 }
 .footer__social:hover{
-    color: var(--first-color);
+    color: var(--theme-color);
 }
 
 /* ===== MEDIA QUERIES =====*/
@@ -415,7 +425,7 @@ img{
         color: var(--text-color);
     }
     .nav__link:hover{
-        color: var(--white-color);
+        color: var(--theme-color);
     }
     .active::after{
         background-color: var(--white-color);
@@ -433,12 +443,10 @@ img{
         padding: 4rem 0;
     }
     .about__img{
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
-    .about__img img{
-        width: 165px;
-    }
+    
 
     .skills__container{
         grid-template-columns: repeat(2, 1fr);
@@ -477,8 +485,5 @@ img{
     .home__container {
         height: 640px;
     }
-    .home__img {
-        width: 500px;
-        right: 24%;
-    }
+   
 }
