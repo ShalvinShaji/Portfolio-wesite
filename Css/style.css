@@ -290,11 +290,12 @@ img{
     background-color: var(--skills-color);
     border-radius: .25rem;
     color: var(--white-color);
+    transition: all .5s ease;
 }
 .skills__name:hover{
     background-color: var(--theme-color);
     color: var(--white-color);
-    transition-duration: .6s;
+    
 }
 .skills__img img{
     border-radius: .5rem;
