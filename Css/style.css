@@ -267,10 +267,11 @@ img{
     font-size: 1.4rem;
     margin: 0 var(--mb-1);
 }
-.about__social-icon:hover{
+.about__social-icon i:hover{
     color: var(--theme-color);
-    transition-duration: .4s;
+    transition-duration: .5s;
 }
+
 
 /* ===== SKILLS =====*/
 .skills__container{
@@ -385,8 +386,9 @@ img{
 }
 .contact__button{
     display: block;
-    background-color: var(--theme-color);
-    color: var(--white-color);
+    background-color: #0e8c9b;
+    transition: all .5s ease;
+    color: var(--text-color);
     padding: .75rem 2.5rem;
     margin-left: auto;
     border-radius: .5rem;
@@ -396,11 +398,21 @@ img{
     cursor: pointer;
     box-shadow:2px 1px 27px rgb(0, 0, 0);
 }
-.contact__button:hover{
-    background-color: #0d6a74;
-    transition-duration: 5s;
+
+.contact__form input, textarea{
+    
+    color: var(--first-color);
+    transition-duration: .5s;
+    
     
 }
+.contact__button:hover{
+    color: var(--theme-color);
+    background-color:var(--first-color);
+
+
+}
+
 
 /* ===== FOOTER=====*/
 .footer{
