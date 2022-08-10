@@ -1,5 +1,4 @@
-/*===== MENU SHOW =====*/
-
+/*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -13,7 +12,6 @@ const showMenu = (toggleId, navId) =>{
 showMenu('nav-toggle','nav-menu')
 
 /*===== REMOVE MENU MOBILE =====*/
-
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
@@ -22,9 +20,7 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-
 /*===== SCROLL SECTIONS ACTIVE LINK =====*/
-
 const sections = document.querySelectorAll('section[id]')
 
 window.addEventListener('scroll', scrollActive)
@@ -45,7 +41,6 @@ function scrollActive(){
     })
 }
 
-
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
@@ -55,8 +50,9 @@ const sr = ScrollReveal({
 })
 
 /*SCROLL HOME*/
+sr.reveal('.home__title', {})
 sr.reveal('.home__scroll', {delay: 200})
-sr.reveal('.home__title', {origin:'right', delay: 400})
+sr.reveal('.home__img', {origin:'right', delay: 400})
 
 /*SCROLL ABOUT*/
 sr.reveal('.about__img', {delay: 500})
@@ -78,5 +74,4 @@ sr.reveal('.contact__subtitle', {})
 sr.reveal('.contact__text', {interval: 200})
 sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
-
 
