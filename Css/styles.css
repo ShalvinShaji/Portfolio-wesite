@@ -104,7 +104,6 @@ img{
 
 /*===== LAYOUT =====*/
 .bd-grid{
-    max-width: 1024px;
     display: grid;
     grid-template-columns: 100%;
     grid-column-gap: 2rem;
@@ -209,9 +208,7 @@ img{
    
 }
 .home__about__me{
-    
-    
-   
+
     align-self: flex-start;
     justify-self: center;
 }
@@ -396,7 +393,7 @@ img{
 }
 
 /* ===== MEDIA QUERIES =====*/
-/* For small devices */
+
 
 @media screen and (min-width: 768px){
     body{
@@ -441,10 +438,10 @@ img{
         grid-template-rows: 1.7fr 1fr;
         row-gap: 0;
     }
-    .home__img{
-        width: 524px;
-        right: 10%;
+    .home__about__me{
+        display: none;
     }
+    
 
     .about__container{
         grid-template-columns: repeat(2, 1fr);
@@ -485,11 +482,14 @@ img{
     }
 }
 
-@media screen and (min-width: 1024px){
-    .bd-grid{
-        margin-left: auto;
-        margin-right: auto;
-    }
+@media screen and (min-width : 1023){
+ .home__container .bd-grid{
+    max-width: auto;
+    
+ }
 }
+    
+
+
 
 
