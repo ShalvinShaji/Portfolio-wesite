@@ -21,7 +21,6 @@
     --big-font-size: 6.25rem;
     --h1-font-size: 2rem;
     --h2-font-size: 1.25rem;
-
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
 }
@@ -62,7 +61,7 @@ body{
     font-weight: var(--font-medium);
     color: var(--text-color);
     line-height: 1.6;
-    background-color: white ;
+    background-color: var(--dark-color) ;
 }
 h1,h2,p{
     margin: 0;
@@ -89,11 +88,11 @@ img{
 .section-title{
     position: relative;
     font-size: var(--h2-font-size);
-    color: var(--dark-color);
+    color: var(--text-color);
     margin: var(--mb-4) 0;
     text-align: center;
 }
-.section-title::after{
+/* .section-title::after{
     position: absolute;
     content: "";
     width: 32px;
@@ -102,10 +101,9 @@ img{
     right: 0;
     margin: auto;
     top: 2rem;
-    background-color: var(--first-color);
     border-radius: 10px;
     
-}
+} */
 
 /*===== LAYOUT =====*/
 .bd-grid{
@@ -122,7 +120,7 @@ img{
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--white-color);
+    background-color: var(--dark-color);
     
 }
 
@@ -141,7 +139,7 @@ img{
         width: 70%;
         height: 100%;
         padding: 2rem;
-        background-color: rgba(155, 155, 155, 0.3);
+        background-color: rgba(58, 58, 58, 0.3);
         transition: .5s;
         backdrop-filter: blur(10px);
         
@@ -152,17 +150,17 @@ img{
 }
 .nav__link{
     position: relative;
-    color: var(--dark-color);
+    color: #b8b8b8;
 }
 .nav__link:hover{
     color: var(--first-color);
 }
 .nav__logo{
-    color: var(--dark-color);
+    color: var(--text-color);
 }
 .nav__toggle{
     
-    color: var(--dark-color);
+    color: var(--text-color);
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -180,7 +178,7 @@ img{
     height: .18rem;
     left: 0;
     top: 2rem;
-    background-color: var(--first-color);
+    /* background-color: var(--first-color); */
 }
 
 /*===== HOME =====*/
@@ -213,15 +211,16 @@ img{
 .home__title{
     
     font-size: var(--big-font-size);
-    color: var(--dark-color);
+    color: var(--text-color);
     line-height: 1;  
     margin-left: var(--mb-1);  
-    text-shadow: 0 20px 25px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
 }
 
 .s{
     color: var(--first-color);
-    transition-duration: 1s; 
+    transition-duration: .3s; 
+    text-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
     
 }
 
@@ -241,16 +240,11 @@ img{
     transform: rotate(-180deg);
     
     color: var(--dark-color);
+    text-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
     
     transition-duration: .5s;
 
 }
-/* .home__about__me:hover{
-    background-color: var(--first-color);
-    color: var(--white-color);
-} */
-
-
 
 
 /* ===== ABOUT =====*/
@@ -284,9 +278,12 @@ img{
     display: block;
     margin-bottom: var(--mb-4);
 }
+
 .about__social-icon{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin: 0 var(--mb-1);
+    transition-duration: .4s;
+    
 }
 .about__social-icon:hover{
     color: var(--first-color);
@@ -304,7 +301,7 @@ img{
 
 
 .skill .set{
-    background-color: rgb(255, 255, 255);
+    background-color: var(--dark-color);
     padding: var(--mb-2);
     border-radius: 16px;
     align-items: center;
@@ -328,7 +325,7 @@ img{
     font-size: 2.3rem;
     background-color: var(--first-color);
     border-radius: 50%;
-    color: white;
+    color: var(--dark-color);
     margin-inline: auto;
  }
 
@@ -349,7 +346,7 @@ img{
 
 /* ===== PORTFOLIO =====*/
 .portfolio{
-    background-color: var(--white-color);
+    background-color: var(--dark-color);
 }
 .portfolio__container{
     justify-items: center;
@@ -389,7 +386,7 @@ img{
 }
 .contact__subtitle{
     font-size: var(--normal-font-size);
-    color: var(--first-color);
+    color: var(--text-color);
 }
 .contact__text{
     display: inline-block;
@@ -399,6 +396,7 @@ img{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1rem;
+    
 }
 .contact__input{
     width: 100%;
@@ -408,10 +406,11 @@ img{
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-4);
     border-radius: .5rem;
+    background-color: #2c2c2c;
 }
 .contact__button{
     display: block;
-    background-color: var(--white-color);
+    background-color: var(--dark-color);
     color: var(--first-color);
     border: 2px solid var(--first-color);
     padding: .75rem 2.5rem;
@@ -429,14 +428,14 @@ img{
 
 /* ===== FOOTER=====*/
 .footer{
-    background-color: var(--dark-color);
+    background-color: #1f1f1f;
 }
 .footer__container{
     row-gap: 2rem;
 }
 .footer__title{
     font-size: var(--normal-font-size);
-    color: var(--white-color);
+    color: var(--text-color);
     margin-bottom: var(--mb-2);
 }
 .footer__link{
@@ -492,15 +491,13 @@ img{
         display: none;
     }
     .nav__link{
-        color: var(--dark-color);
+        color: var(--text-color);
+        transition-duration: .4s;
     }
     .nav__link:hover{
         color: var(--first-color);
     }
-    .active::after{
-        background-color: var(--first-color);
-    }
-
+  
     .home__title{
         justify-self: center;
         margin-top: var(--mb-4)
@@ -517,12 +514,10 @@ img{
         padding: 4rem 0;
     }
     .about__img{
-        width: 200px;
-        height: 200px;
+        width: 350px;
+        height: 350px;
     }
-    .about__img img{
-        width: 165px;
-    }
+   
 
     .skill{
     
@@ -532,8 +527,7 @@ img{
         padding: 5rem;
     }
     .skill .set{
-        background-color: rgb(255, 255, 255);
-        
+        background-color: var(--dark-color);
         border-radius: 16px;
         align-items: center;
         height: 350px;
@@ -542,24 +536,6 @@ img{
         
      }
     
-     .skill .set:hover {
-        box-shadow: 0px 12px 16px #00000024;
-    
-     }
-    
-     .skill span{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-        height: 50px;
-        font-size: 2.3rem;
-        background-color: var(--first-color);
-        border-radius: 50%;
-        color: white;
-        margin-inline: auto;
-     }
-
      .skill header{
         padding-block: var(--mb-3);
         font-size: 1.2rem;
