@@ -53,8 +53,11 @@ const sr = ScrollReveal({
 /*SCROLL HOME*/
 sr.reveal('.home__title', {})
 sr.reveal('.home__role', {delay: 200})
-sr.reveal('.home__about__me', {delay: 400})
-sr.reveal('.down__arrow', {origin:'right', delay: 400})
+sr.reveal('.home__social-icons', {delay: 400})
+sr.reveal('.home__about__me', {delay: 500})
+
+// sr.reveal('.icon-l', {origin:'left', delay: 400})
+// sr.reveal('.icon-r', {origin:'right', delay: 500})
 
 /*SCROLL ABOUT*/
 sr.reveal('.about__img', {delay: 500})
@@ -64,9 +67,7 @@ sr.reveal('.about__text', {delay: 500})
 sr.reveal('.about__social-icon', {delay: 600, interval: 200})
 
 /*SCROLL SKILLS*/
-sr.reveal('.skills__subtitle', {})
-sr.reveal('.skills__name', {distance: '20px', delay: 50, interval: 100})
-sr.reveal('.skills__img', {delay: 400})
+sr.reveal('.set', {interval: 200})
 
 /*SCROLL PORTFOLIO*/
 sr.reveal('.portfolio__img', {interval: 200})
