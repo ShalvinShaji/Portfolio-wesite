@@ -80,6 +80,10 @@ img{
     height: auto;
     display: block;
 }
+::selection {
+    color: #1f1f1f;
+    background: var(--first-color);
+  }
 
 /*===== CLASS CSS ===== */
 .section{
@@ -91,6 +95,7 @@ img{
     color: var(--text-color);
     margin: var(--mb-4) 0;
     text-align: center;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.355);
 }
 /* .section-title::after{
     position: absolute;
@@ -216,17 +221,21 @@ img{
     margin-left: var(--mb-1);  
     text-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
 }
+.home__title__name{
+    color: var(--first-color);
+}
 
-.s{
+/* .s{
     color: var(--first-color);
     transition-duration: .3s; 
     text-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
     
-}
+} */
 
 /* .s:hover{
     color: #222222;
 } */
+
 .home__role{
     font-size: 1.1rem;
     align-self: center;
@@ -296,13 +305,14 @@ img{
     display: grid;
     padding: var(--mb-2);
     grid-template-columns: 1fr;
+    
 }
 
 
 
 .skill .set{
     background-color: var(--dark-color);
-    padding: var(--mb-2);
+    padding: var(--mb-4);
     border-radius: 16px;
     align-items: center;
     justify-content: center;
@@ -501,7 +511,14 @@ img{
     .home__title{
         justify-self: center;
         margin-top: var(--mb-4)
+        
+        
     }
+    /* .home__title__name{
+        color: #1f1f1f;
+        background-color: var(--first-color)
+        
+    } */
     .home__about__me{
         display: none;
     }
@@ -525,7 +542,9 @@ img{
         align-items: center;
         justify-self: center;
         padding: 5rem;
+        background-color: #1f1f1f;
     }
+  
     .skill .set{
         background-color: var(--dark-color);
         border-radius: 16px;
@@ -560,6 +579,7 @@ img{
     .contact__container{
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+        
     }
     .contact__form{
         width: 380px;
