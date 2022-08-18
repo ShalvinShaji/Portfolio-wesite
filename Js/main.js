@@ -39,6 +39,7 @@ sr.reveal('.home__social-icons', {delay:700, interval: 200})
 // sr.reveal('.icon-r', {origin:'right', delay: 500})
 
 /*SCROLL ABOUT*/
+
 sr.reveal('.about__img', {delay: 500})
 sr.reveal('.about__subtitle', {delay: 300})
 sr.reveal('.about__profession', {delay: 400})
