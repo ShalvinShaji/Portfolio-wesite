@@ -21,27 +21,6 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
-/*===== SCROLL SECTIONS ACTIVE LINK =====*/
-const sections = document.querySelectorAll('section[id]')
-
-window.addEventListener('scroll', scrollActive)
-
-function scrollActive(){
-    const scrollY = window.pageYOffset
-
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
-
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
-        }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
-        }
-    })
-}
-
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
@@ -52,9 +31,9 @@ const sr = ScrollReveal({
 
 /*SCROLL HOME*/
 sr.reveal('.home__title', {})
-sr.reveal('.home__role', {delay: 200})
-sr.reveal('.home__social-icons', {delay: 400})
-sr.reveal('.home__about__me', {delay: 500})
+sr.reveal('.home__role', {delay: 300})
+sr.reveal('.home__about__me', {delay:500})
+sr.reveal('.home__social-icons', {delay:700, interval: 200})
 
 // sr.reveal('.icon-l', {origin:'left', delay: 400})
 // sr.reveal('.icon-r', {origin:'right', delay: 500})
