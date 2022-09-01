@@ -397,7 +397,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255,255,255,.3);
+    background-color: transparent;
     border-radius: .5rem;
     cursor: pointer;
     backdrop-filter: blur(10px);
@@ -407,7 +407,7 @@ img{
     bottom: 0;
 }
 .portfolio__link-name{
-    color: var(--dark-color);
+    color: var(--white-color);
 }
 
 /* ===== CONTACT =====*/
