@@ -408,6 +408,8 @@ img{
 }
 .portfolio__link-name{
     color: var(--white-color);
+    font-size: 30px;
+  
 }
 
 /* ===== CONTACT =====*/
