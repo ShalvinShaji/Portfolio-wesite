@@ -335,7 +335,7 @@ img{
     display: grid;
     padding: var(--mb-2);
     grid-template-columns: 1fr;
-    background-color: #1c1d1c;
+   
     
 }
 
@@ -349,6 +349,8 @@ img{
     justify-content: center;
     transition-duration: .5s;
     margin: var(--mb-1);
+    
+    box-shadow: 1px 6px 16px rgb(15, 15, 15);
     
     
  }
@@ -614,6 +616,7 @@ img{
         align-items: center;
         justify-self: center;
         padding: 5rem;
+        background-color: rgb(19, 19, 19);
         
      
     }
@@ -622,7 +625,8 @@ img{
         background-color: var(--dark-color);
         border-radius: 16px;
         align-items: center;
-        height: 350px;
+        height: 300px;
+        
         
         
         
