@@ -229,7 +229,8 @@ img{
   
     font-size: 1.6rem;
     padding: 8px;
-    background-color: #282828;
+    /* background-color: #282828; */
+    border: 2px solid #282828;
     margin: 0 var(--mb-1);  
     border-radius: 50%;
 
@@ -450,8 +451,15 @@ img{
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-4);
     border-radius: .5rem;
-    background-color: #2c2c2c;
+    background-color: #232323;
     color: rgb(190, 190, 190);
+}
+
+.contact input {
+    border-color: #393939;
+}
+.contact textarea{
+    border-color: #393939; 
 }
 .contact__button{
     display: block;
@@ -465,13 +473,13 @@ img{
     cursor: pointer;
     transition-duration: .6s;
 }
-/* .contact__button:hover{
+.contact__button:hover{
     box-shadow: inset -10.5rem 0 0 0 var(--first-color), inset 10.5rem 0 0 0 var(--first-color);
     color: var(--white-color);
     
    
    
-} */
+}
 
 /* ===== FOOTER=====*/
 .footer{
@@ -487,7 +495,7 @@ img{
     justify-self: center;
 }
 .fone,.ftwo,.fthree{
-    background-color: #282828;
+    border: 2px solid #282828;
     padding:5px 7px 2px 7px;
     font-size: 1.6rem;
     border-radius: 50%;
