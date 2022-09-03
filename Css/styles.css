@@ -341,7 +341,7 @@ img{
 
 
 .skill .set{
-    background-color: var(--dark-color);
+    
     padding: var(--mb-4);
     border-radius: 16px;
     align-items: center;
@@ -349,12 +349,9 @@ img{
     transition-duration: .5s;
     margin: var(--mb-1);
     
+    
  }
 
- .skill .set:hover {
-    box-shadow: 0px 12px 16px #00000024;
-
- }
 
  .skill span{
     display: flex;
@@ -410,11 +407,11 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(47, 47, 47, 0.33);
+    background-color: transparent;
     border-radius: .5rem;
     cursor: pointer;
-    backdrop-filter: blur(10px);
-    transition: .3s;
+    backdrop-filter: blur(7px);
+    transition: .6s;
 }
 .portfolio__img:hover .portfolio__link{
     bottom: 0;
@@ -447,19 +444,12 @@ img{
     width: 100%;
     padding: .8rem;
     outline: none;
-    border: 1.5px solid var(--dark-color);
+    border: 1px solid rgb(40, 40, 40);
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-4);
     border-radius: .5rem;
-    background-color: #232323;
-    color: rgb(190, 190, 190);
-}
-
-.contact input {
-    border-color: #393939;
-}
-.contact textarea{
-    border-color: #393939; 
+    background-color: #323232;
+    color: #999999;
 }
 .contact__button{
     display: block;
@@ -474,7 +464,7 @@ img{
     transition-duration: .6s;
 }
 .contact__button:hover{
-    box-shadow: inset -10.5rem 0 0 0 var(--first-color), inset 10.5rem 0 0 0 var(--first-color);
+    box-shadow: inset -10.5rem 0 0 0 var(--first-color);
     color: var(--white-color);
     
    
@@ -618,7 +608,8 @@ img{
         align-items: center;
         justify-self: center;
         padding: 5rem;
-        background-color: #1f1f1f;
+        background-color: #1c1d1c;
+     
     }
   
     .skill .set{
@@ -626,7 +617,8 @@ img{
         border-radius: 16px;
         align-items: center;
         height: 350px;
-        transition-duration: .5s;
+        
+        
         
         
      }
