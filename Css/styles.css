@@ -465,13 +465,13 @@ img{
     cursor: pointer;
     transition-duration: .6s;
 }
-.contact__button:hover{
+/* .contact__button:hover{
     box-shadow: inset -10.5rem 0 0 0 var(--first-color), inset 10.5rem 0 0 0 var(--first-color);
     color: var(--white-color);
     
    
    
-}
+} */
 
 /* ===== FOOTER=====*/
 .footer{
