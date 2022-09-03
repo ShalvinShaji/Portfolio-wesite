@@ -335,6 +335,7 @@ img{
     display: grid;
     padding: var(--mb-2);
     grid-template-columns: 1fr;
+    background-color: #1c1d1c;
     
 }
 
@@ -448,9 +449,14 @@ img{
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-4);
     border-radius: .5rem;
-    background-color: #323232;
-    color: #999999;
+    background-color: #e2e2e2;
+    color: #323232;
 }
+::placeholder {
+    color: #717171;
+    opacity: 1;
+}
+
 .contact__button{
     display: block;
     background-color: var(--dark-color);
@@ -608,7 +614,7 @@ img{
         align-items: center;
         justify-self: center;
         padding: 5rem;
-        background-color: #1c1d1c;
+        
      
     }
   
