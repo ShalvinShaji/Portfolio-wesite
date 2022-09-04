@@ -451,10 +451,10 @@ img{
     margin-bottom: var(--mb-4);
     border-radius: .5rem;
     background-color: #393939;
-    color: #b2b2b2;
+    color: rgb(196, 196, 196);
 }
 ::placeholder {
-    color: #717171;
+    color: var(--text-color);
     opacity: 1;
 }
 
