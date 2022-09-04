@@ -47,7 +47,7 @@ sr.reveal('.home__social-icons', {delay:700, interval: 200})
 // sr.reveal('.about__social-icon', {delay: 600, interval: 200})
 
 /*SCROLL SKILLS*/
-sr.reveal('.set', {interval: 200})
+// sr.reveal('.set', {interval: 200})
 
 /*SCROLL PORTFOLIO*/
 // sr.reveal('.portfolio__img', {interval: 200})
