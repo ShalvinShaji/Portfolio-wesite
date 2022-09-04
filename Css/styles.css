@@ -349,14 +349,13 @@ img{
     justify-content: center;
     transition-duration: .5s;
     margin: var(--mb-1);
+    box-shadow: 0px 9px 14px rgb(15, 15, 15);
     
   
     
     
  }
- .skill .set:hover{
-    box-shadow: 0px 9px 14px rgb(15, 15, 15);
- }
+
 
 
  .skill span{
