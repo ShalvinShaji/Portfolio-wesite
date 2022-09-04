@@ -454,8 +454,8 @@ img{
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-4);
     border-radius: .5rem;
-    background-color: #e2e2e2;
-    color: #323232;
+    background-color: #393939;
+    color: #b2b2b2;
 }
 ::placeholder {
     color: #717171;
