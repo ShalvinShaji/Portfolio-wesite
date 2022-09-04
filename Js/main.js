@@ -52,6 +52,7 @@ sr.reveal('.home__social-icons', {delay:700, interval: 200})
 /*SCROLL PORTFOLIO*/
 // sr.reveal('.portfolio__img', {interval: 200})
 
+
 /*SCROLL CONTACT*/
 // sr.reveal('.contact__subtitle', {})
 // sr.reveal('.contact__text', {interval: 200})
