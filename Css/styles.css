@@ -450,8 +450,8 @@ img{
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-4);
     border-radius: .5rem;
-    background-color: #393939;
-    color: rgb(196, 196, 196);
+    background-color: #252525;
+    color: #c4c4c4;
 }
 ::placeholder {
     color: var(--text-color);
